@@ -16,3 +16,6 @@
 - Filters
     - Low-pass Filter
     - Kalman Filter & Complementary Filter
+
+## Lect06 - HDMI Output
+- Pygame
