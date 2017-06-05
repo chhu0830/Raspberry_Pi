@@ -19,3 +19,11 @@
 
 ## Lect06 - HDMI Output
 - Pygame
+
+## Lect07 - Raspberry Pi - Neteworking
+- Networking
+    - Apache Web Server
+    - HTTP/GET, HTTP/POST
+- Bluetooth (Eddystone)
+    - [python code](https://github.com/google/eddystone/blob/master/eddystone-url/implementations/linux/advertise-url)
+    - hcitool
