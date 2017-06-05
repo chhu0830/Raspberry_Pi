@@ -15,4 +15,4 @@
 - Barometer (BMP085)
 - Filters
     - Low-pass Filter
-    - Kalman Filter & Complementary Filter (https://raw.githubusercontent.com/mwilliams03/BerryIMU/master/python-BerryIMU-gryo-accel-compass/berryIMU.py)
+    - Kalman Filter & Complementary Filter
