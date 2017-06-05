@@ -27,3 +27,12 @@
 - Bluetooth (Eddystone)
     - [python code](https://github.com/google/eddystone/blob/master/eddystone-url/implementations/linux/advertise-url)
     - hcitool
+
+## Lect08 - Raspberry Pi & Arduino
+- Sensors
+    - DHT11
+    - Soil Moisture Sensor
+- Connection
+    - Over I2C
+    - HTTP/GET, HTTP/POST
+
