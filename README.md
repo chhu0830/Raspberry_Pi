@@ -36,3 +36,8 @@
     - Over I2C
     - HTTP/GET, HTTP/POST
 
+## Lect09 - OpenCV
+- Segmentation and Gray
+- Rotation and Add
+- Edge Detection
+- Eliminate salt
