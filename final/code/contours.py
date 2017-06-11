@@ -1,25 +1,20 @@
+#!/usr/bin/python3
 import cv2
+import sys
+import config
 import numpy as np
+from utils import contours
 
-path = '../data/test/'
-filename = 'back.jpg'
 
-img = cv2.imread(path + filename);  
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+ori = config.DIR['test']
+dst = config.DIR['contours']
+filename = sys.argv[1]
 
-kernel = np.ones((2, 2),np.uint8)
-erosion = cv2.erode(gray, kernel, iterations = 5)
+img = cv2.imread(ori + filename, 0);  
+img = contours(img)
 
-thresh = 100
-edges = cv2.Canny(erosion, thresh, thresh*2)
-_, contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
-white = 255 * np.ones(img.shape, img.dtype)
-cv2.drawContours(white, contours, -1, (0,0,0), 3)
-
+cv2.imwrite(dst + filename, img)
 cv2.imshow(filename, img)
-cv2.imshow('contours', white)  
-
 cv2.waitKey(0)  
 cv2.destroyAllWindows()
 
